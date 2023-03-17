@@ -434,20 +434,7 @@ function isSquareNumber(n) {
     }
 }
 console.log(isSquareNumber(10))*/
-//cau 33
-/*
-function CanBac2(n) {
-    if (n === 1) {
-        return Math.sqrt(2);
-    } else {
-        return Math.sqrt(2 + CanBac2(n - 1));
-    }
-}
-function tinhSn(n) {
-    return CanBac2(n)
-}
-console.log(tinhSn(4))*/
-//cau34
+//cau33
 //Tính S(n) = CanBac2(2+CanBac2(2+….+CanBac2(2 + CanBac2(2)))) có n dấu căn
 /*
 function sqrt(n) {
@@ -461,84 +448,7 @@ function tinhSn(n) {
     }
 }
 console.log(tinhSn(3))*/
-//cau36
-/*
-function giaithua(n) {
-    if (n === 1) {
-        return 1;
-    } else {
-        return n * giaithua(n - 1)
-    }
+//cau 34 
+function CanBac2(n){
+    return Math.
 }
-function canbac2(n) {
-    return Math.sqrt(n)
-}
-function tinhSn(n) {
-    let s = 0
-    for (let i = 1; i <= n; i++) {
-        s = canbac2(giaithua(i) + s)
-    }
-    return s
-}
-console.log(tinhSn(3))*/
-//cau 37
-//
-// Tính S(n) = CanBac N(N + CanBac N – 1(N – 1 + … + CanBac3(3 + CanBac2(2))) có n – 1 dấu căn
-/*
-function canbacn(n) {
-    return Math.sqrt(n)
-}
-function tinhSn(n, k) {
-    if (n === 2) {
-        return canbacn(k + 2)
-    } else {
-        return canbacn(k + tinhSn(n - 1, k + 1))
-    }
-}
-console.log(tinhSn(2, 4))*/
-//cau 38
-//Tính S(n) = CanBac N + 1(N + CanBac N(N – 1 +…+CanBac3(2 + CanBac2(1)))) có n dấu căn
-/*
-function s(n) {
-    if (n === 1) {
-        return Math.sqrt(1)
-    } else {
-        return Math.sqrt(n + (s(n - 1)))
-    }
-}
-console.log(s(4))*/
-//cau 39
-// Tính S(n) = CanBac N + 1(N! + CanBacN((N – 1)! + … + CanBac3(2! + CanBac2(1!))) có n dấu căn
-/*
-function s(n) {
-    if (n === 1) {
-        return Math.sqrt(1)
-    } else {
-        var factorial = 1;
-        for (let i = 1; i <= n; i++) {
-            factorial *= i
-        }
-    }
-    return Math.sqrt(factorial += s(n - 1))
-}
-console.log(s(4))*/
-//cau40
-// Tính S(n) = CanBac2(x^n + CanBac2(x^n-1 + … + CanBac2(x^2 + CanBac2(x)))) có n dấu căn
-/*
-function s(x, n) {
-    if (n === 1) {
-        return Math.sqrt(x)
-    } else {
-        return Math.sqrt(Math.pow(x, n) + s(x, n - 1))
-    }
-}
-console.log(s(2, 4))*/
-//cau 41: Tính S(n) = 1 / (1 + 1 / ( 1 + 1 / (…. 1 + 1 / 1 + 1))) có n dấu phân số
-function s(n) {
-    let s = 1;
-    for (let i = 0; i <= n; i++) {
-        s += 1 + 1.0 / s
-    }
-    return s
-}
-console.log(s(2))

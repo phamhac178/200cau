@@ -538,6 +538,7 @@ function s(n) {
     let s = 1;
     for (let i = 0; i <= n; i++) {
         s += 1 + 1.0 / s
+        console.log(i)
     }
     return s
 }

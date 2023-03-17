@@ -524,21 +524,4 @@ function s(n) {
 console.log(s(4))*/
 //cau40
 // Tính S(n) = CanBac2(x^n + CanBac2(x^n-1 + … + CanBac2(x^2 + CanBac2(x)))) có n dấu căn
-/*
-function s(x, n) {
-    if (n === 1) {
-        return Math.sqrt(x)
-    } else {
-        return Math.sqrt(Math.pow(x, n) + s(x, n - 1))
-    }
-}
-console.log(s(2, 4))*/
-//cau 41: Tính S(n) = 1 / (1 + 1 / ( 1 + 1 / (…. 1 + 1 / 1 + 1))) có n dấu phân số
-function s(n) {
-    let s = 1;
-    for (let i = 0; i <= n; i++) {
-        s += 1 + 1.0 / s
-    }
-    return s
-}
-console.log(s(2))
+function canbacn

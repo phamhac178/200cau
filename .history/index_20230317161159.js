@@ -535,10 +535,8 @@ function s(x, n) {
 console.log(s(2, 4))*/
 //cau 41: Tính S(n) = 1 / (1 + 1 / ( 1 + 1 / (…. 1 + 1 / 1 + 1))) có n dấu phân số
 function s(n) {
-    let s = 1;
+    let s= 0 ;
     for (let i = 0; i <= n; i++) {
-        s += 1 + 1.0 / s
+
     }
-    return s
 }
-console.log(s(2))

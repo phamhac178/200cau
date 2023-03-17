@@ -498,47 +498,20 @@ function tinhSn(n, k) {
 console.log(tinhSn(2, 4))*/
 //cau 38
 //Tính S(n) = CanBac N + 1(N + CanBac N(N – 1 +…+CanBac3(2 + CanBac2(1)))) có n dấu căn
-/*
-function s(n) {
-    if (n === 1) {
+// function canbacn(n){
+//     return Math.sqrt(n)
+// }
+// function tinhSn(k, n){
+//     if(n===2){
+//         return canbacn(k+2)
+//     }else{
+//         canbacn(k+tinhSn(n,k+1))
+//     }
+// }
+function s(n){
+    if(n===1){
         return Math.sqrt(1)
-    } else {
-        return Math.sqrt(n + (s(n - 1)))
+    }else{
+        return Math.sqrt()
     }
 }
-console.log(s(4))*/
-//cau 39
-// Tính S(n) = CanBac N + 1(N! + CanBacN((N – 1)! + … + CanBac3(2! + CanBac2(1!))) có n dấu căn
-/*
-function s(n) {
-    if (n === 1) {
-        return Math.sqrt(1)
-    } else {
-        var factorial = 1;
-        for (let i = 1; i <= n; i++) {
-            factorial *= i
-        }
-    }
-    return Math.sqrt(factorial += s(n - 1))
-}
-console.log(s(4))*/
-//cau40
-// Tính S(n) = CanBac2(x^n + CanBac2(x^n-1 + … + CanBac2(x^2 + CanBac2(x)))) có n dấu căn
-/*
-function s(x, n) {
-    if (n === 1) {
-        return Math.sqrt(x)
-    } else {
-        return Math.sqrt(Math.pow(x, n) + s(x, n - 1))
-    }
-}
-console.log(s(2, 4))*/
-//cau 41: Tính S(n) = 1 / (1 + 1 / ( 1 + 1 / (…. 1 + 1 / 1 + 1))) có n dấu phân số
-function s(n) {
-    let s = 1;
-    for (let i = 0; i <= n; i++) {
-        s += 1 + 1.0 / s
-    }
-    return s
-}
-console.log(s(2))
