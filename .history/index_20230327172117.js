@@ -840,7 +840,6 @@ console.log(ptb2(1, 5, 6))*/
 }
 console.log(ptb4(1, -1, 3, -3))*/
 //cau 67: Tính S(x, n) = x – x^2 + x^3 + … + (-1)^n+1 * x^n
-/*
 function S(x, n) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
@@ -848,4 +847,4 @@ function S(x, n) {
     }
     return sum
 }
-console.log(S(2, 4))*/
+console.log(S(2, 4))

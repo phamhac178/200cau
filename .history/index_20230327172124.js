@@ -848,4 +848,4 @@ function S(x, n) {
     }
     return sum
 }
-console.log(S(2, 4))*/
+console.log(S(2, 4))

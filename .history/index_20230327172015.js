@@ -810,7 +810,7 @@ function ptb2(a, b, c) {
 }
 console.log(ptb2(1, 5, 6))*/
 //cau 66: giai pt bac 4
-/*function ptb4(a, b, c, d) {
+function ptb4(a, b, c, d) {
     var d1 = b * b - 3 * a * c;
     var d2 = 2 * b * b * b - 9 * a * b * c + 27 * a * a * d;
     var delta = d2 * d2 - 4 * d1 * d1 * d1;
@@ -838,14 +838,13 @@ console.log(ptb2(1, 5, 6))*/
         return [y1, y2, y3, y4]
     }
 }
-console.log(ptb4(1, -1, 3, -3))*/
+console.log(ptb4(1, -1, 3, -3))
 //cau 67: Tính S(x, n) = x – x^2 + x^3 + … + (-1)^n+1 * x^n
-/*
 function S(x, n) {
     let sum = 0;
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1; i < n; i++) {
         sum += Math.pow(-1, i + 1) * Math.pow(x, i);
     }
     return sum
 }
-console.log(S(2, 4))*/
+console.log(2, 3)
